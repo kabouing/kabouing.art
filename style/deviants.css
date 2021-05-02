@@ -1,0 +1,19 @@
+html, body {
+position: relative;
+background-image:url("../img/trippy.gif");
+background-repeat: repeat;
+margin: 0;
+padding: 0;
+border: 0;
+height: 100%;
+}
+
+#video {
+position: relative;
+left: 50%; 
+top: 50%;
+width: 420px;
+height: 357px;
+margin-top: -160px;
+margin-left: -210px;
+}

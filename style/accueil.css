@@ -1,0 +1,73 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,  
+li, dl, dt, dd, form, a, fieldset, input, th, td  
+{  
+margin: 0; padding: 0; border: 0; outline: none;  
+}  
+
+body{
+	background:#FFF; 
+	overflow: hidden;
+}
+
+a, a:hover, a:visited {text-decoration:none;}
+
+#labyrinthe, #blog{
+	position: absolute;
+	display:block;
+	background:#F0F url("../img/arcenciel2.gif");
+	top: 0;
+	left:0;
+	height:90%;
+	width:45%;
+	padding:6% 5% 5% 4%;
+}
+
+
+#blog{
+	position:absolute;
+	top:0;
+	left:50%;
+	right:0;
+	background:#FFF;
+	padding:4% 5%;	
+}
+
+.accroche{
+	font-size:12px;
+}
+#blog .accroche{
+	margin:1% 0 0 3%;
+	font-family: Helvetica, Arial, Sans-Serif;
+	color: #000;
+}
+#labyrinthe .accroche{
+	margin-left:5.5%;
+	font-family:georgia,"times new roman",serif;
+	color: #FFF;
+}
+
+.typo1 span{
+display: inline;
+white-space: pre;
+font-family:georgia,"times new roman",serif;
+font-size: 3.2em;
+font-weight: normal;
+color: white;
+background: black;
+letter-spacing:-0.02em;
+line-height:1.3em;
+}
+#blog .typo1{
+margin:10px 0 0 18px;
+}
+
+
+
+
+
+
+
+
+
+
+

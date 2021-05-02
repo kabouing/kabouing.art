@@ -1,0 +1,23 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+div#footer{
+	width:100%;
+	text-align:center;
+	position:absolute;
+	bottom:15;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+a:visited{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	text-decoration:none;
+	color:green;
+}
+	

@@ -1,0 +1,56 @@
+body { 
+background-image:url("../img/arcenciel.gif"); 
+background-repeat: repeat;
+}
+
+a{text-decoration:none}
+
+.magenta{
+padding:5px;
+color: magenta;
+font-family: arial, helvetica, sans serif;
+font-weight: bolder;
+letter-spacing: -7px;
+font-size: 4em; 
+text-decoration: blink;
+}
+
+.aqua{
+padding:5px;
+color: aqua;
+font-family: arial, helvetica, sans serif;
+font-weight: bolder;
+letter-spacing: -7px;
+font-size: 4em; 
+text-decoration: blink;
+}
+
+.yellow{
+padding:5px;
+color: yellow;
+font-family: arial, helvetica, sans serif;
+font-weight: bolder;
+letter-spacing: -7px;
+font-size: 4em; 
+text-decoration: blink;
+}
+
+.lime{
+padding:5px;
+color: lime;
+font-family: arial, helvetica, sans serif;
+font-weight: bolder;
+letter-spacing: -7px;
+font-size: 4em; 
+text-decoration: blink;
+}
+
+.red{
+padding:5px;
+color: red;
+font-family: arial, helvetica, sans serif;
+font-weight: bolder;
+letter-spacing: -7px;
+font-size: 4em; 
+text-decoration: blink;
+}
