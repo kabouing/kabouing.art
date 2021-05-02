@@ -1,98 +1,1 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-    
-        <title>Le temps de savoir</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-        <meta name="author" content="Kabouing.com"/>
-        <meta http-equiv="Content-Language" content="fr-FR"/>
-        <meta name="publisher" content="Kabouing"/>
-        <meta name="copyright" content="Kabouing"/>
-        <meta name="keywords" content="Kabouing,kabouin,cabouing,cabouin,collectif,créatif,vidéos,musique,graphisme,soirées,poésie,chanson,téléthon,morteau,vin chaud,urk,ursulun,ursul1,rapmaxtoutripoux,fresh,maximelehmann2012,kevin,annecy,grenoble,sculpture,communication,publicité,publicite,créatif,creatif,developpement,développement,creation,création,étude,mise en page,redaction,rédaction,efficace,organisation,conception,france,doubs,web,internet,fun,vie,drôle,drole,amusant"/>
-        <meta name="description" content="Kabouing.com le site ou on va quand on cherche quelque chose"/>
-
-        <meta name="page-topic" content="collectif/créatif"/>
-        <meta name="audience" content="Tout"/>
-        
-        <meta name="expires" content="NEVER"/>
-        <meta name="page-type" content="Site Web communautaire"/>
-        <meta name="robots" content="index, follow, all"/>
-        <meta name="IDENTIFIER-URL" content="http://www.kabouing.com"/>
-        <meta name="REPLY-TO" content="kabouing@gmail.com"/>
-        <meta name="owner" content="kabouing@gmail.com"/>
-        <meta name="REVISIT-AFTER" content="7 days"/>
-
-        <meta name="distribution" content="Global"/>
-        <meta name="rating" content="General"/>
-		<script src="script/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="script/rand_color.js" type="text/javascript" charset="utf-8"></script>
- <style>
-	body{background:url("img/k_gif.gif") repeat;}
-	/*div.test{background-color:jaune} ceci ne marche pas*/
-	div.test{background-color:yellow}
-	#hidden{
-	width:300px;
-	height:400px;
-	margin:0;
-	padding:0;
-	}
-	a{text-decoration:none;}
-	img{border:0;}
-	div.bougeable{margin:auto;width:300px;height:300px;}
-	div#devidoir{height:70px;width:250px;line-height:70px;text-align:center;float:left}
-	div#vivrez{height:30px;width:250px;line-height:30px;text-align:center;float:left;margin:auto}
-	div#un_autre_monde{width:20px;height:30px;margin:142px 0 0 809px}
-	a#porte{font-size:45px;font-family:arial,sans-serif;font-weight:bold;color:#876500}
-	a#go_on{font-family:arial,sans-serif;font-size:14px;color:black;text-transform:uppercase}
-	a#go_on:visited{color:black}
-	a#go_on:hover{color:yellow}
-</style>
-<script>
-function alheure(){
-			horloge = new Date();
-			hr = horloge.getHours();
-			if (hr < 10){hr = "0"+hr;}
-			min = horloge.getMinutes();
-			if (min < 10){min = "0"+min;}
-			sec = horloge.getSeconds();
-			if (sec < 10){sec = "0"+sec;}
-			affiche = hr +" : "+min+" : "+sec;
-			$('a#porte').html(affiche);
-		}
-
-</script>
-<script>
-	function repeat(){
-				alheure();
-				setTimeout('repeat()', 1000);
-			}
-	jQuery(document).ready(function() {
-		$('a#go_on').click(function(){
-			alheure();
-			setupColourific($('a#porte'));
-		});
-		$('a#go_on').mouseover(function(){
-			alheure();
-			$('div#devidoir').show();
-			//repeat();jean donne l'heure qu'il est au moment où il la demande
-		});
-		$('a#go_on').mouseout(function(){
-			$('div#devidoir').hide();
-		});
-		$('div#devidoir').hide();
-		alheure();
-	});
-</script>
-</head>
-<body>
-	<div class="bougeable">
-		<div id="vivrez" class="test"><a id="go_on" href="#" title="le voici">Je n'ai pas le temps</a></div>
-		<div id="devidoir"><a id="porte" href="breath.html" title="jusqu'à ce qu'on s'arrête">0</a></div>
-	</div>
-	<div id="un_autre_monde"><a id="labas" href="letemps.html" title="il n'y a pas de chemin">
-			<img src="img/k_gif3.gif" alt="il est temps d'y aller"/>
-		</a></div>
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>            <title>Le temps de savoir</title>	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />        <meta name="author" content="kabouing.art"/>        <meta http-equiv="Content-Language" content="fr-FR"/>        <meta name="publisher" content="Kabouing"/>        <meta name="copyright" content="Kabouing"/>        <meta name="keywords" content="Kabouing,kabouin,cabouing,cabouin,collectif,créatif,vidéos,musique,graphisme,soirées,poésie,chanson,téléthon,morteau,vin chaud,urk,ursulun,ursul1,rapmaxtoutripoux,fresh,maximelehmann2012,kevin,annecy,grenoble,sculpture,communication,publicité,publicite,créatif,creatif,developpement,développement,creation,création,étude,mise en page,redaction,rédaction,efficace,organisation,conception,france,doubs,web,internet,fun,vie,drôle,drole,amusant"/>        <meta name="description" content="kabouing.art le site ou on va quand on cherche quelque chose"/>        <meta name="page-topic" content="collectif/créatif"/>        <meta name="audience" content="Tout"/>                <meta name="expires" content="NEVER"/>        <meta name="page-type" content="Site Web communautaire"/>        <meta name="robots" content="index, follow, all"/>        <meta name="IDENTIFIER-URL" content="http://www.kabouing.art"/>        <meta name="REPLY-TO" content="kabouing@gmail.com"/>        <meta name="owner" content="kabouing@gmail.com"/>        <meta name="REVISIT-AFTER" content="7 days"/>        <meta name="distribution" content="Global"/>        <meta name="rating" content="General"/>		<script src="script/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>		<script src="script/rand_color.js" type="text/javascript" charset="utf-8"></script> <style>	body{background:url("img/k_gif.gif") repeat;}	/*div.test{background-color:jaune} ceci ne marche pas*/	div.test{background-color:yellow}	#hidden{	width:300px;	height:400px;	margin:0;	padding:0;	}	a{text-decoration:none;}	img{border:0;}	div.bougeable{margin:auto;width:300px;height:300px;}	div#devidoir{height:70px;width:250px;line-height:70px;text-align:center;float:left}	div#vivrez{height:30px;width:250px;line-height:30px;text-align:center;float:left;margin:auto}	div#un_autre_monde{width:20px;height:30px;margin:142px 0 0 809px}	a#porte{font-size:45px;font-family:arial,sans-serif;font-weight:bold;color:#876500}	a#go_on{font-family:arial,sans-serif;font-size:14px;color:black;text-transform:uppercase}	a#go_on:visited{color:black}	a#go_on:hover{color:yellow}</style><script>function alheure(){			horloge = new Date();			hr = horloge.getHours();			if (hr < 10){hr = "0"+hr;}			min = horloge.getMinutes();			if (min < 10){min = "0"+min;}			sec = horloge.getSeconds();			if (sec < 10){sec = "0"+sec;}			affiche = hr +" : "+min+" : "+sec;			$('a#porte').html(affiche);		}</script><script>	function repeat(){				alheure();				setTimeout('repeat()', 1000);			}	jQuery(document).ready(function() {		$('a#go_on').click(function(){			alheure();			setupColourific($('a#porte'));		});		$('a#go_on').mouseover(function(){			alheure();			$('div#devidoir').show();			//repeat();jean donne l'heure qu'il est au moment où il la demande		});		$('a#go_on').mouseout(function(){			$('div#devidoir').hide();		});		$('div#devidoir').hide();		alheure();	});</script></head><body>	<div class="bougeable">		<div id="vivrez" class="test"><a id="go_on" href="#" title="le voici">Je n'ai pas le temps</a></div>		<div id="devidoir"><a id="porte" href="breath.html" title="jusqu'à ce qu'on s'arrête">0</a></div>	</div>	<div id="un_autre_monde"><a id="labas" href="letemps.html" title="il n'y a pas de chemin">			<img src="img/k_gif3.gif" alt="il est temps d'y aller"/>		</a></div></body></html>

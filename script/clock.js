@@ -1,9 +1,9 @@
-//version modifiée par Julien Fraichot 17/10/2008
-//pour http://ww.kabouing.com
-//le coeur du code est toujours présent mais l'affichage est modifié
+//version modifiï¿½e par Julien Fraichot 17/10/2008
+//pour http://ww.kabouing.art
+//le coeur du code est toujours prï¿½sent mais l'affichage est modifiï¿½
 
-//Version modifiée par NBC 
-//La version originale permettait de placer l'horloge en absolut par rapport au coin haut gauche de l'écran
+//Version modifiï¿½e par NBC 
+//La version originale permettait de placer l'horloge en absolut par rapport au coin haut gauche de l'ï¿½cran
 //celle-ci permettait de placer l'horloge en absolut par rapport au coin haut gauche du bloc contenant
 
 //script original :
@@ -12,7 +12,7 @@
 	//Visit http://www.dynamicdrive.com for this script and more
 
 
-//Variables à modifier :
+//Variables ï¿½ modifier :
 
 //Les couleurs :
 fCol='7777BB'; //couleur des chiffres.
@@ -22,7 +22,7 @@ hCol='000066'; //couleur des heures.
 miCol ="000000";//couleur millisecondes
 
 //position en absolut :
-Xoff=247;  //à gauche
+Xoff=247;  //ï¿½ gauche
 Yoff=188; //en haut
 
 //taille
@@ -41,7 +41,7 @@ couleur[3] = '#FFFF00';//jaune
 couleur[4] = '#00FFFF';//cyan
 couleur[5] = '#FF00FF';//magenta
 
-//phrase affichée
+//phrase affichï¿½e
 var phrase = new Array();
 phrase[0] = "le temps ";
 phrase[1] = "qui passe ";
@@ -49,7 +49,7 @@ phrase[2] = "est une illusion ";
 var crpTxt="";
 var txt="<h1>";
 
-//ne pas modifier ci-après :
+//ne pas modifier ci-aprï¿½s :
 //taille aiguille heure
 H='...';
 H=H.split('');
@@ -146,7 +146,7 @@ function changeBg (){
 	setTimeout('changeBg()', 1000);
 }
 changeBg();
-//ajoute un bout de phrase à chaque minute
+//ajoute un bout de phrase ï¿½ chaque minute
 function ajtPhrsInit(){
 	var leTps = new Date();
 	var laMin = leTps.getMinutes();
