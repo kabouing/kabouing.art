@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+    apache:
+        image: httpd:2.4
+        working_dir: /usr/local/apache2/htdocs
+        ports: 
+            - 2000:80
+        volumes:
+          - ./:/usr/local/apache2/htdocs
+            
