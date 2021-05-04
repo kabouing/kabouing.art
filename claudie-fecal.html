@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>1 et 2 et 3 et 4 et...</title>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap'); */
+        body{
+            background: pink;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            width: 100vw;
+            font-family: 'Pirata One', cursive;
+        }
+        h1{
+            font-size: 10vw;
+            margin: auto;
+            position: relative;
+            text-align: center;
+            z-index: 10;
+            opacity: 0;
+            text-transform: uppercase;
+            min-width:60%;
+        }
+        h1.claudie{
+            margin-bottom: 0;
+        }
+        h1.fecal{
+            margin-top: 0;
+        }
+        div {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            display: flex;
+        }
+        video{
+            display: block;
+            min-height: 50vh;
+            min-width: 50vw;
+            margin: auto;
+            z-index: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            console.log("CACA !");
+
+            var video;
+            var h1s;
+            var body;
+            var duration;
+            var timeline;
+            var loopIndex = 0;
+
+
+            function colorize(items, prop) {
+                if (Object.prototype.isPrototypeOf.call(NodeList.prototype, items)) {
+                    items.forEach(item => {
+                        item.style[prop] = madnessColor();
+                    });
+                }
+                if (Object.prototype.isPrototypeOf.call(Element.prototype, items)) {
+                    items.style[prop] = madnessColor();
+                }
+                return items;
+            };
+
+            function madnessColor() {
+                const h = Math.round(Math.random()*360) + 'deg';
+                const s = '100%';
+                const l = '50%';
+                const a = '1';
+                return 'hsl(' + h + ', ' + s + ', ' + l + ', ' + a + ')'
+            }
+
+            video = document.querySelector('video');
+            body = document.querySelector('body');
+            h1s = document.querySelectorAll('h1');
+
+            duration = Math.round((video.duration / video.playbackRate) * 100000) / 100;
+
+            timeline = anime.timeline({
+                loop: true,
+                autoplay: false,
+                easing: 'easeInQuad',
+                loopBegin : function(anim) {
+                    // if (anim.direction && loopIndex % 2 === 0) {
+                    //     colorize(items);
+                    // }
+                    colorize(h1s, 'color');
+                    colorize(body, 'backgroundColor');
+                    console.log('Et ', (loopIndex % 4) + 1, ' !')
+                    loopIndex ++;
+                }
+            });
+            
+            video.playbackRate = 2.0;
+            video.loop = true;
+            video.controls = false;
+
+            // Durée max de la timeline
+            timeline.add({
+                targets: 'body',
+                buffer: [0, 100],
+                duration: duration,
+            }, 0);
+            
+            // Rotation video
+            timeline.add({
+                targets: 'video',
+                rotate: 360,
+                duration: duration,
+                easing: 'linear',
+            }, 0 * duration / 4); 
+
+            // Anim Claudie
+            timeline.add({
+                targets: 'h1.claudie',
+                opacity: 1,
+                scale: [0, 1],
+                duration: duration / 8,
+                complete: function(anim) {
+                    colorize(body, 'backgroundColor');
+                }
+            }, 0);
+
+            timeline.add({
+                targets: 'h1.fecal',
+                opacity: 1,
+                scale: [0, 1],
+                duration: duration / 8,
+            }, 1 * duration / 4);
+
+            timeline.add({
+                targets: 'h1.claudie',
+                opacity: 0,
+                scale: 5,
+                duration: duration / 8,
+            }, 2 * duration / 4);
+
+            timeline.add({
+                targets: 'h1.fecal',
+                opacity: 0,
+                scale: 5,
+                duration: duration / 8,
+            }, 3 * duration / 4);
+
+            video.addEventListener('play', (event) => {
+                timeline.play();
+            });
+
+            video.addEventListener('pause', (event) => {
+                timeline.pause();
+            });
+
+            video.play();
+        }
+    </script>
+</head>
+
+<body>
+    <noscript>Le mec, il a désactivé javascript sur un site d'ART, lol.</noscript>
+    <h1 class="claudie">Claudie</h1>
+    <h1 class="fecal">Fécal</h1>
+    <div>
+        <video>
+            <source src="img/gym.mp4" type="video/mp4">
+            <source src="rabbit320.webm" type="video/webm">
+          </video>
+    </div>
+</body>
+
+</html>
