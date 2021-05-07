@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vide</title>
+    <style>
+        h1{
+            font-size: 10vw;
+            color: #fff;
+            margin: auto;
+            display: block;
+            margin-top: 2vw;
+        }
+        p{
+            font-size: 2vw;
+            color: #fff;
+            margin: auto;
+            margin-bottom: 0;
+            display: block;
+        }
+        body{
+            margin: 0;
+            background: #000;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            console.log("Nope");
+
+            const labels = [
+                'Non',
+                'Rien',
+                'Vide',
+            ];
+
+            const labelized = document.querySelectorAll('title, h1');
+            const fontified = document.querySelectorAll('p, h1');
+
+            randomLabels(labelized, labels);
+            randomFontFamily(fontified);
+        }
+
+        randomLabels = function(elts, labels) {
+            elts.forEach(elt => {
+                elt.textContent = labels[Math.floor(Math.random() * labels.length)];
+            });
+        };
+        randomFontFamily = function(elts) {
+            const fontFamily = [
+                'serif',
+                'sans-serif',
+                'monospace',
+                'cursive',
+                'fantasy',
+                'system-ui',
+                'emoji',
+            ];
+            elts.forEach(elt => {
+                const fontFam = fontFamily[Math.floor(Math.random() * fontFamily.length)]
+                elt.style.setProperty('font-family', fontFam);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <noscript>Le mec, il a désactivé javascript sur un site d'ART, lol.</noscript>
+    <p>Erreur 404 :</p>
+    <h1>RIEN</h1>
+</body>
+
+</html>
